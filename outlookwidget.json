@@ -1,0 +1,120 @@
+{
+    "id": "com.rohitchouhan.indirasai.outlookwidget",
+    "version": "1.0.0",
+    "name": "outlookwidget",
+    "description": "An Outlook Custom Widget",
+    "newInstancePrefix": "outlookwidget",
+    "vendor": "indirasai",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https://raw.githubusercontent.com/indirasai-bollepalli/outlookwidget/main/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-indirasai-sap-outlookwidget",
+            "url": "https://cdn.jsdelivr.net/gh/indirasai-bollepalli/outlookwidget/outlookwidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-indirasai-sap-outlookwidget-builder",
+            "url": "https://cdn.jsdelivr.net/gh/indirasai-bollepalli/outlookwidget/outlookwidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "email": {
+            "description": "Email Address",
+            "type": "string",
+            "default": "bollepalliindirasai@gmail.com"
+        },
+        "subject": {
+            "description": "Email subject",
+            "type": "string",
+            "default": "SAP Analytics"
+        },
+        "Body": {
+            "description": "Body to send",
+            "type": "string",
+            "default": "Hello from SAP Analytics Cloud"
+        },
+        "caption": {
+            "description": "Caption",
+            "type": "string",
+            "default": "Send to Outlook"
+        }
+    },
+    "methods": {
+        "setEmail": {
+            "description": "Set Email Address",
+            "parameters": [
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "Data for Email Address"
+                }
+            ],
+            "body": "this.email = email;"
+        },
+        "getEmail": {
+            "returnType": "string",
+            "description": "Return Email Address",
+            "body": "return this.email;"
+        },
+        "setSubject": {
+            "description": "Set Subject",
+            "parameters": [
+                {
+                    "name": "subject",
+                    "type": "string",
+                    "description": "Subject of the email"
+                }
+            ],
+            "body": "this.subject = subject;"
+        },
+        "getSubject": {
+            "returnType": "string",
+            "description": "Return Subject",
+            "body": "return this.subject;"
+        },
+        "setBody": {
+            "description": "Set Body to send",
+            "parameters": [
+                {
+                    "name": "Body",
+                    "type": "string",
+                    "description": "Data for Body to send"
+                }
+            ],
+            "body": "this.Body = Body;"
+        },
+        "getBody": {
+            "returnType": "string",
+            "description": "Return Body to send",
+            "body": "return this.Body;"
+        },
+        "setCaption": {
+            "description": "Set Caption",
+            "parameters": [
+                {
+                    "name": "caption",
+                    "type": "string",
+                    "description": "Caption"
+                }
+            ],
+            "body": "this.caption = caption;"
+        },
+        "getCaption": {
+            "returnType": "string",
+            "description": "Return Caption",
+            "body": "return this.caption;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
