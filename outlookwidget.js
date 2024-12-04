@@ -66,7 +66,7 @@
   
         async sendEmailWithPdf(storyContent) {
             // Directly use the SendGrid API Key (hardcoded)
-            const sendGridApiKey = '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';  // Replace with your actual SendGrid API key
+            const sendGridApiKey = 'SENDGRID_API_KEY';  // Replace with your actual SendGrid API key
             
             const emailData = {
                 personalizations: [{
