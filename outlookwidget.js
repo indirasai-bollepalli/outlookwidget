@@ -71,7 +71,7 @@
                   to: [{ email: this._props.email }],
                   subject: this._props.subject
               }],
-              from: { email: 'your-email@example.com' }, // Your email address
+              from: { email: 'indirasai.bollepalli@nagarro.com' }, // Your email address
               content: [{
                   type: 'text/html',
                   value: `<h1>${this._props.subject}</h1><p>${this._props.Body}</p><div>${storyContent}</div>`
